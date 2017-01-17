@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /home/tushar/topic_modeling/Users/tjee/Downloads/word2vec_kaggle/gameon
+for i in * ;
+do
+	python /home/tushar/topic_modeling/Users/tjee/Downloads/word2vec_kaggle/bagofwords2.py "$i" >> /home/tushar/topic_modeling/Users/tjee/Downloads/word2vec_kaggle/out_topic_sentences.txt
+	echo "Processed $i " >> /home/tushar/topic_modeling/Users/tjee/Downloads/word2vec_kaggle/log_topic_bowoutput
+done
